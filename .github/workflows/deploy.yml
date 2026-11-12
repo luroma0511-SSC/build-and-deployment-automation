@@ -34,7 +34,9 @@ jobs:
 
       # Build and test application
       - name: Build Application
-        run: ./gradlew clean build
+        run: |
+          chmod +x gradlew
+          ./gradlew clean build
 
       # Prepare and execute deployment
       - name: Deploy Application
