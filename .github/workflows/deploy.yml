@@ -15,6 +15,8 @@ permissions:
 jobs:
   build-and-deploy:
     runs-on: ubuntu-latest
+
+    steps:
       # Retrieve project source code
       - name: Checkout Repository
         uses: actions/checkout@v4
